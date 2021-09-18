@@ -18,6 +18,9 @@ const router = async (route) => {
         case '#/carrito':{
             return root.appendChild(await pages.carrito())
         }
+        case '#/pago':{
+            return root.appendChild(await pages.pago())
+        }
         
     }
 };

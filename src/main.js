@@ -13,3 +13,8 @@ router(window.location.hash);
 window.addEventListener('hashchange',() =>{
     router(window.location.hash);
 });
+
+
+window.onbeforeunload = function(e) {
+    window.localStorage.setItem('sesion', 'Inactiva');
+};

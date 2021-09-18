@@ -38,6 +38,15 @@ export default async () => {
         fila.remove();
     });
     
+    on(Element, 'click', '#comprar-producto', (e) =>{
+        var sesion = String(window.localStorage.getItem('sesion'));
+
+        if(sesion == 'Activa'){
+            window.location.href = 'http://localhost:8080/#/pago';
+        }else{
+            window.location.href = 'http://localhost:8080/#/login';
+        }
+    });
     
     var count = 0;
     listProductos.forEach(producto => {
