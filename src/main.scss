@@ -1,0 +1,152 @@
+#top-header {
+    height: 40px;
+    background-color: #1E1F29;
+}
+#center-header {
+    height: 100px;
+    background-color: #15161D;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+#navigation {
+    background: #FFF;
+    border-bottom: 2px solid #E4E7ED;
+    border-top: 3px solid #D10024;
+}
+
+#butom-search {
+   height: 38px;
+   background-color: #D10024;
+   border: solid 1px #D10024;
+}
+
+#butom-search:hover {
+    background-color: #15161D;
+    color: white;
+}
+
+.icon-font{
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    padding: 12px 17px 8px 16px;   
+}
+
+.nav-icon-font {
+    width: 400px;
+    padding-left: 45px;
+    padding-right: 18px;
+}
+
+#advanced-search-form{
+    background-color: #fff;
+    max-width: 850px;
+    margin: 20px auto 0;
+    padding: 15px;
+    color: #858b8e;
+    box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.09);
+}
+
+#advanced-search-form h2{
+    padding-bottom: 20px;
+    margin: 10px 20px;
+    font-size: 24px;
+}
+
+#advanced-search-form hr{
+    margin-top: 38px;
+    margin-bottom: 54px;
+    margin-left:3px;
+    border: 1px solid #cccccc;
+
+}
+
+#advanced-search-form .form-group{
+	margin-bottom: 20px;
+    margin-left:20px;
+	width: 30%;
+    float:left;
+    text-align: left;
+}
+
+#advanced-search-form .form-control{
+    padding: 12px 20px;
+    height: auto;
+    border-radius: 2px;
+}
+
+#advanced-search-form .radio-inline{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#advanced-search-form .gender{
+    width: 30%;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#advanced-search-form .btn{
+    width: 46%;
+    margin: 20px auto 0;
+    display: block;
+    outline: none;
+}
+
+@media screen and (max-width: 800px){
+    #advanced-search-form .form-group{
+        width: 45%;
+    }
+
+    #advanced-search-form{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 560px){
+    #advanced-search-form .form-group{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #advanced-search-form h2{
+        text-align: center;
+    }
+}
+
+.btn-info {
+    background-color: #D10024;
+    border: solid 1px #15161D;
+}
+
+.btn-info:hover {
+    background-color: #15161D;
+    color: white;
+}
+
+#logo-Empresa {
+    max-width: 400px;
+    padding-left: 222px;
+    font-size: 20px;
+}
+
+span.blue {
+    background: #5178D0;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.6em;
+    text-align: center;
+    width: 1.6em; 
+    font-size: 12px;
+    position: absolute;
+    left: 70.6%;
+    top: 3%;
+    z-index: 1;
+  }
