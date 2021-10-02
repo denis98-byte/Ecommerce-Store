@@ -1,55 +1,57 @@
 <div class="container" id="advanced-search-form">
     <h2>Realizar Pago</h2>
-    <form id="form-registro-cliente">
+    <form id="form-metodo-Pago">
         <div id="row">
-            <div class="form-group" style="width: 245px;">
-                <label for="first-name">Nombre</label>
-                <input type="text" class="form-control" placeholder="Nombre" name="nombre">
+            <div class="form-group" style="width: 130px;">
+                <label for="first-name">Serie</label>
+                <input type="text" class="form-control" value="A" name="serie">
+            </div>
+            <div class="form-group" style="width: 360px;">
+                <label for="last-name">Numero</label>
+                <input type="text" class="form-control" id="idNumeroFact" name="numero">
             </div>
             <div class="form-group" style="width: 245px;">
-                <label for="last-name">Apellido</label>
-                <input type="text" class="form-control" placeholder="Apellido" name="apellido">
-            </div>
-            <div class="form-group" style="width: 245px;">
-                <label for="first-name">Telefono</label>
-                <input type="text" class="form-control" placeholder="Telefono" name="telefono">
+                <label for="first-name">Fecha</label>
+                <input type="date" class="form-control" name="fecha">
             </div>
         </div>
         <div id="row">
             <div class="form-group" style="width: 245px;">
-                <label for="last-name">Correo</label>
-                <input type="text" class="form-control" placeholder="Correo" name="correo">
+                <label for="first-name">Nit</label>
+                <input type="text" class="form-control" placeholder="717198-8" name="nit">
             </div>
             <div class="form-group" style="width: 245px;">
-                <label for="first-name">Tipo Cliente</label>
-                <select type="text" class="form-control" name="tipoCliente">
-                    <option value="0">Seleccion tipo</option>
-                    <option value="1">Empresa</option>
-                    <option value="2">Individual</option>
-                    <option value="3">Distribuidor</option>
-                </select>
+                <label for="last-name">Nombre</label>
+                <input type="text" class="form-control" placeholder="Hector Herrera" name="Nombre">
             </div>
             <div class="form-group" style="width: 245px;">
-                <label for="last-name">Nit</label>
-                <input type="text" class="form-control" placeholder="Nit" name="nit">
+                <label for="last-name">Telefono</label>
+                <input type="number" class="form-control" placeholder="" name="Nombre">
             </div>
         </div>
         <div id="row">
             <div class="form-group" style="width: 775px;">
-                <label for="first-name">Direccion</label>
+                <label for="first-name">Direccion de entrega</label>
                 <textarea type="text" class="form-control" placeholder="Direccion" name="direccion"></textarea>
             </div>
         </div>
         <div id="row">
-            <div class="form-group" style="width: 245px;">
-                <label for="first-name">Usuario</label>
-                <input type="text" class="form-control" placeholder="Usuario" name="usuario">
+            <div class="form-group" style="width: 510px;">
+                <label for="first-name">Metodo de Pago</label>
+                <select type="text" class="form-control" id="idMetodoPago" name="metodo">
+                    <option value="0">Seleccion el metodo de pago</option>
+                    <option value="1">Deposito</option>
+                    <option value="2">Efectivo</option>
+                    <option value="3">Tarjeta de Credito</option>
+                </select>
             </div>
             <div class="form-group" style="width: 245px;">
-                <label for="last-name">Contraseña</label>
-                <input type="password" class="form-control" placeholder="Contraseña" name="contraseña">
+                <label for="last-name">Total Factura</label>
+                <input type="number" class="form-control" placeholder="" name="Nombre">
             </div>
         </div>
-        <button type="button" class="btn btn-info btn-lg btn-responsive" id="search"> <span class="glyphicon glyphicon-search"></span> Registar</button>
     </form>
+    <button type="submit" class="btn btn-info btn-lg btn-responsive" id="search" onclick=""> <span class="glyphicon glyphicon-search"></span> Realizar Compra</button>
 </div>
+<br>
+<br>
