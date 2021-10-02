@@ -46,11 +46,8 @@ export default async () => {
 
         var response = await createCliente(cliente);
 
-        window.location.href = 'http://localhost:8080/#/login';
+        window.location.href = 'http://localhost:5501/#/login';
     });
-
-
-
     
     return Element;
 };

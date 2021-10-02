@@ -24,7 +24,7 @@ const getCatalogoSearch = async (Search) => {
     }
 }
 
-const URL_PRODUCTO           = 'https://localhost:44366/api/producto/';
+const URL_PRODUCTO  = 'https://localhost:44366/api/producto/';
 
 const getByIdProducto = async (id) =>{
     try {

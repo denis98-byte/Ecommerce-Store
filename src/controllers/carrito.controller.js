@@ -42,9 +42,9 @@ export default async () => {
         var sesion = String(window.localStorage.getItem('sesion'));
 
         if(sesion == 'Activa'){
-            window.location.href = 'http://localhost:8080/#/pago';
+            window.location.href = 'http://localhost:5501/#/pago';
         }else{
-            window.location.href = 'http://localhost:8080/#/login';
+            window.location.href = 'http://localhost:5501/#/login';
         }
     });
     
@@ -75,8 +75,6 @@ export default async () => {
         </tr>
         `;
     });
-
-
 
     return Element;
 };

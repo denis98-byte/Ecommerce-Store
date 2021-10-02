@@ -26,7 +26,7 @@ export default () => {
         if(login.user !== "") {
             window.localStorage.setItem('sesion', 'Activa');
 
-            window.location.href = 'http://localhost:8080/#';
+            window.location.href = 'http://localhost:5501/#';
         }
 
     });
