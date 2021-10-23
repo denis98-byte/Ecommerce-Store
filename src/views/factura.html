@@ -1,0 +1,100 @@
+<style type="text/css">
+  @media print{
+      .btn, .accion{
+          display: none;    
+      }
+      .navbar{
+        display: none;
+      }
+      #input-search{
+        display: none;
+      }
+      .nav{
+        display: none;
+      }
+      #butom-search{
+        display: none;
+      }
+      .sinborde {
+        border: 0;
+      }
+  }
+</style>
+<br>
+<h4  class="text-center">Factura</h4>
+<form action="" method="GET" id="formFacturaCompraCompra">
+    <div class="form-group">
+        <div class="card" style="padding: 10px;">
+          <div class="row">
+            <div class="col">
+                <label for="fecha">Nit CompuShop</label>
+                <input type="text" class="form-control sinborde" name="" value="458745-9" disabled>
+            </div>
+            <div class="col">
+                <label for="fecha">Direccion copuShop</label>
+                <input type="text" class="form-control sinborde" name="" value="Guatemala 2av 15-36 Zona 10" disabled>
+            </div>
+            <div class="col">
+              <label for="fecha">...</label>
+              <input type="text" class="form-control sinborde" id="TotalReporteCompra" name="" disabled>
+            </div>
+            <br/>
+            <br/>
+           </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <label for="fecha">Serie Factura</label>
+                <input type="text" class="form-control sinborde" name="serie" disabled>
+            </div>
+            <div class="col">
+                <label for="fecha">Numero Factura</label>
+                <input type="text" class="form-control sinborde" name="numero" disabled>
+            </div>
+            <div class="col">
+              <label for="fecha">Fecha</label>
+              <input type="text" class="form-control sinborde" id="TotalReporteCompra" name="fecha" disabled>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+              <label for="fecha">Nit</label>
+              <input type="text" class="form-control sinborde" name="nit" disabled>
+          </div>
+          <div class="col">
+              <label for="fecha">Nombre</label>
+              <input type="text" class="form-control sinborde" name="nombre" disabled>
+          </div>
+          <div class="col">
+            <label for="fecha">Direccion</label>
+            <input type="text" class="form-control sinborde" id="" name="direccion" disabled>
+        </div>
+      </div>
+    </div>
+</form>
+<br/>
+<table class="table table-bordered" id="Tabla-Productos-row">
+  <thead class="table-primary">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Cantidad</th>
+      <th scope="col">Precio Unidad</th>
+      <th scope="col">Sub Total</th>
+    </tr>
+  </thead>
+  <tbody class="Tabla-ProductosFactura-row">
+  </tbody>
+</table>
+
+<div style="margin-left: 520px;">
+  <label for="">Total</label>
+  <input type="text" id="TotalCompraFactura" disabled>
+</div>
+
+<div class="col">
+  <br/>
+  <button type="submit" class="btn btn-success" id="" onclick="print()"> <i class="fas fa-print"></i> Imprimir Factura</button>
+  <button type="submit" class="btn btn-success" id="idRealizarNuevaCompra"> <i class="fas fa-shopping-bag"></i> Nueva Compra</button>
+</div>

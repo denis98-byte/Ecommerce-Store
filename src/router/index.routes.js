@@ -21,7 +21,9 @@ const router = async (route) => {
         case '#/pago':{
             return root.appendChild(await pages.pago())
         }
-        
+        case '#/factura':{
+            return root.appendChild(await pages.factura())
+        }
     }
 };
 

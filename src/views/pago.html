@@ -1,24 +1,24 @@
 <div class="container" id="advanced-search-form">
     <h2>Realizar Pago</h2>
-    <form id="form-metodo-Pago">
+    <form action="http://localhost:5501/#/factura" id="form-metodo-Pago">
         <div id="row">
             <div class="form-group" style="width: 130px;">
                 <label for="first-name">Serie</label>
-                <input type="text" class="form-control" value="A" name="serie">
+                <input type="text" class="form-control" value="A" name="serie" disabled>
             </div>
             <div class="form-group" style="width: 360px;">
                 <label for="last-name">Numero</label>
-                <input type="text" class="form-control" id="idNumeroFact" name="numero">
+                <input type="text" class="form-control" id="idNumeroFact" name="numero" disabled>
             </div>
             <div class="form-group" style="width: 245px;">
                 <label for="first-name">Fecha</label>
-                <input type="date" class="form-control" name="fecha">
+                <input type="text" class="form-control" id="idFechaFactura" name="fecha" disabled>
             </div>
         </div>
         <div id="row">
             <div class="form-group" style="width: 245px;">
                 <label for="first-name">Nit</label>
-                <input type="text" class="form-control" placeholder="717198-8" name="nit">
+                <input type="text" class="form-control" placeholder="717198-8" name="Nit">
             </div>
             <div class="form-group" style="width: 245px;">
                 <label for="last-name">Nombre</label>
@@ -26,13 +26,13 @@
             </div>
             <div class="form-group" style="width: 245px;">
                 <label for="last-name">Telefono</label>
-                <input type="number" class="form-control" placeholder="" name="Nombre">
+                <input type="number" class="form-control" placeholder="" name="Telefono">
             </div>
         </div>
         <div id="row">
             <div class="form-group" style="width: 775px;">
                 <label for="first-name">Direccion de entrega</label>
-                <textarea type="text" class="form-control" placeholder="Direccion" name="direccion"></textarea>
+                <textarea type="text" class="form-control" placeholder="Direccion" name="Direccion"></textarea>
             </div>
         </div>
         <div id="row">
@@ -42,16 +42,16 @@
                     <option value="0">Seleccion el metodo de pago</option>
                     <option value="1">Deposito</option>
                     <option value="2">Efectivo</option>
-                    <option value="3">Tarjeta de Credito</option>
+                    <option value="3">Tarjeta de Credito / Debito</option>
                 </select>
             </div>
             <div class="form-group" style="width: 245px;">
                 <label for="last-name">Total Factura</label>
-                <input type="number" class="form-control" placeholder="" name="Nombre">
+                <input type="number" class="form-control" name="Factura" placeholder=""  id="idTotalFactura" disabled>
             </div>
         </div>
     </form>
-    <button type="submit" class="btn btn-info btn-lg btn-responsive" id="search" onclick=""> <span class="glyphicon glyphicon-search"></span> Realizar Compra</button>
+    <button type="button" class="btn btn-info btn-lg btn-responsive" id="IdRealizarCompra" onclick=""> <span class="glyphicon glyphicon-search"></span> Realizar Compra</button>
 </div>
 <br>
 <br>

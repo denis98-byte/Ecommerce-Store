@@ -44,7 +44,11 @@ export default async () => {
             idTipoCliente : parseInt(form.get('tipoCliente')),
         }
 
+        console.log(cliente)
+
         var response = await createCliente(cliente);
+
+        console.log(response)
 
         window.location.href = 'http://localhost:5501/#/login';
     });
